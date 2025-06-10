@@ -29,7 +29,7 @@ const perguntas = [
                 texto: "Escreve o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema."
                 afirmacao: "afirmacao"
             }
-        ],
+        ]
     },
     {
         enunciado: "Após a elaboração do trabalho, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
@@ -42,7 +42,7 @@ const perguntas = [
                 texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendo a importância de proteger os trabalhadores."
                 afirmacao: "afirmacao"
             },
-        ],
+        ]
     },
     {
         enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
@@ -55,7 +55,7 @@ const perguntas = [
                 texto: "Criar uma imagem utilizando um gerador de imagem de IA."
                 afirmacao: "afirmacao"
             },
-        ],
+        ]
     },
     {
         enunciado: "Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda de uma IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz?",
@@ -85,7 +85,7 @@ function mostraAlternativas() {
     for (const alternativa of perguntaAtual.alternativas) {
         const botaoAlternativa = document.createElement("button");
         botaoAlternativa.textContent = alternativa.texto;
-        botaoAlternativa.addEventListener("click", function() {
+        botaoAlternativa.addEventListener("click", function () {
             atual++;
             mostraPergunta();
         })
